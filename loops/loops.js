@@ -12,6 +12,19 @@
 // //     console.log(i);
 // // }
 
+let shoppingList = ["egg", "toilet paper", "milk"];
+console.table(shoppingList)
+for(let i = 0; i < shoppingList.length; i++) {
+	//### modifying elements in array ###
+	shoppingList[i] += "s";
+	// ### trimming items in array ###
+	let item = shoppingList[i];
+	console.log(item);
+	let trimmedItem = item.trim();
+	console.log(trimmedItem);
+}
+console.table(shoppingList)
+
 let num = 1000;
 let sum = 0;
 

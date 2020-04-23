@@ -35,11 +35,10 @@ let kettleBoiled;
 
 // withdraw, deposit, check pin, change pin, take cheques, emergency cash, display balance, change currency, find a husband / wife
 
-const withdrawl = (withdrawlAmount, accountNumber) => {
-
+const withdrawl = (withdrawlAmount = 50, accountNumber = 1234) => {
   console.log(`Withdrawing ${withdrawlAmount} from ${accountNumber}`);
   // we need a bankBalance (something to withdraw from...)... if there is enough money in the account...
 }
 
-withdrawl(123456, 500)
-
+withdrawl(123456, 500);
+withdrawl();

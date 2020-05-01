@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* min-height: 100vh; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* 
+        flex-start, flex-end, space-between, space-around and center, space-evenly
+    */
+    /* align-items: baseline; */
+    /* flex-start, flex-end, center, baseline */
+    /* height: 100vh;
+    border: 10px solid rebeccapurple;
+    align-content: stretch; */
+    /* text-decoration: line-through; */
+}
+
+.box {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    padding: 15px;
+    /* width: 100%;  */
+    flex: 1;
+}
+
+/* 
+
+    ordering: starts from 0 as default
+    so if you don't specify an order... 
+    it'll work top to bottom...
+    if you do specify, make sure EVERYTHING has an order
+
+*/
+
+.box1 {
+    background-color: crimson;
+    /* padding-bottom: 200px; */
+    /* align-self: baseline; */
+    /* font-size: 40px; */
+    /* order: 3; */
+}
+
+.box2 {
+    background-color: firebrick;
+    /* align-self: flex-end; */
+    /* font-size: 100px; */
+    /* order: 1; */
+}
+
+.box3 {
+    background-color: red;
+    /* font-size: 200px; */
+    /* order: 2; */
+}
+
+.box4 {
+    background-color: peru;
+    flex: 2;
+    /* font-size: 500px; */
+    /* order: 10; */
+}
+
+.box5 {
+    background-color: limegreen;
+    /* padding-bottom: 0; */
+    /* align-self: center; */
+    /* font-size: 10px; */
+    /* order: 5; */
+
+}
+
+.box6 {
+    background-color: teal;
+}
+
+.box7 {
+    background-color: blanchedalmond;
+}
+
+.box8 {
+    background-color: steelblue;
+    flex: 3;
+}
+.box9 {
+    background-color: hotpink;
+    /* padding-bottom: 50px; */
+}
+.box10 {
+    background-color: turquoise;
+    /* order: -1; */
+}
+

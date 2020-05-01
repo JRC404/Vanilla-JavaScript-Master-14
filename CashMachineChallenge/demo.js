@@ -25,6 +25,31 @@
 // while (attempts != 3) {
 //     pinCheck()
 // }
+let machineOptions;
+let newPin;
+
+const options = (pin) => {
+    pin = prompt('Please enter pin')
+    pinCounter=0
+    if (pin == '9999') {
+        alert('correct pin')
+        machineOptions = prompt('Choose one of the following options. 1.Change pin 2.View account 3.View transactions 4.Withdraw Cash 5.Change language 6.Deposit Cash.')
+        if (machineOptions == 'Change pin'){
+            changePin()
+        }
+    }
+}
+
+const changePin = () => {
+    newPin = prompt('Please enter new pin')
+    validatePin = prompt('Please enter it again')
+    if (newPin == validatePin) {
+        alert('Your pin has changed')
+    }
+    else {
+        changePin()
+    }
+}
 
 
-
+options(9999)

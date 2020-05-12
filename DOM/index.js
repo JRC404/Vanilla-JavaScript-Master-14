@@ -33,7 +33,7 @@ list.style.color = "red";
 // FOR arguments sake... if we were to use a loop...
 
 // loop through the elements... 
-for(let i = 0; i < paragraphs.length; i++) {
+for (let i = 0; i < paragraphs.length; i++) {
     paragraphs[i].style.color = "red";
 }
 
@@ -45,10 +45,8 @@ for (let i = 0; i < smallerHeading.length; i++) {
     smallerHeading[i].style.color = "pink";
 }
 
-document.getElementsByClassName('smallerHeading')[0].style.color='red'
-smallerHeading[1].style.color='green'
-
-
+document.getElementsByClassName('smallerHeading')[0].style.color = 'red'
+smallerHeading[1].style.color = 'green'
 
 
 
@@ -58,11 +56,39 @@ myFirstHeading.addEventListener("click", () => {
 
 button.addEventListener("click", () => {
     // myFirstHeading.style.color = "yellow";
-    myFirstHeading.style.color = input.value;
+    // myFirstHeading.style.color = input.value;
+    // let number = input.value;
+    // console.log(number);
+
+    // // const box = document.createElement('div')
+
+    // for (i = 0; i < number; i++) {
+    //     // put your code to create one... in here? Maybe? Possibly? Could that work? Who knows? not me? Maaaybe?
+    //     const box = document.createElement('button')
+    //     document.body.appendChild(box)
+    // }
+
+    const box = document.createElement('div');
+    box.id = 'box';
+
+    document.body.appendChild(box);
+
+    // loop - to create however many boxes I have... 
+    // 1,2,3,4,5,6,7,8,9,10
+    // console.log(0,1,2,3,4...)
+    // create a paragraph element ... however many times it loops through
+
+
     // smallerHeading[0].style.color = input.value;
     // console.log(input.value);
 })
 
+// button.onclick = () => {
+//     const box = document.createElement('div');
+//     box.id = 'box';
+
+//     wrapper.appendChild(box);
+// }
 
 
 /**

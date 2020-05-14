@@ -8,7 +8,7 @@ if (age < 18) {
   console.log('10% discount for you.');
 }
 
-let favouriteColour = 'Pink';
+let favouriteColour = 'Orange';
 
 if (favouriteColour == 'Orange') {
   console.log('Well done, Jacob. Great choice, pal.');
@@ -24,21 +24,24 @@ if (favouriteColour == 'Orange') {
   console.log("That's not a colour I know.");
 }
 
-switch (favouriteColour) {
-  case 'Orange':
-    console.log('Good choice.');
-    break;
-  case 'Purple':
-  case 'Blue':
-  case 'Yellow':
-  case 'Red':
-  case 'Pink':
-    console.log("It's not orange though.");
-    break;
-  default:
-    console.log("That's not a colour I know.");
-    break;
-}
+if (favouriteColour == pink)
+  // if (favouriteColour == (whatever value is after case))
+
+  switch (favouriteColour) {
+    case 'Orange':
+      console.log('Good choice.'); // if favouriteColour == orange
+      break;
+    case 'Purple': // if favouriteColour == purple
+    case 'Blue': // if favouriteColour == blue
+    case 'Yellow': // if favouriteColour == yello
+    case 'Red': // if favouriteColour == red
+    case 'Pink': // if favouriteColour == pink
+      console.log("It's not orange though.");
+      break;
+    default:
+      console.log("That's not a colour I know.");
+      break;
+  }
 
 let grade = 'a';
 
